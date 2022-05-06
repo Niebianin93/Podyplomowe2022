@@ -8,8 +8,28 @@ public class Human {
 
     Phone mobile;
     Animal pet;
-    Car car;
+    private Car car;
     private Double salary;
+
+    public Car getCar () {
+        return this.car;
+
+    }
+
+    public void setCar(Car car) {
+        if(this.salary > car.value) {
+            System.out.println("gratulację kupiłeś za gotówkę" + car.model);
+            this.car = car;
+        } else if (this.salary > car.value / 12.0) {
+            System.out.println("kupiłeś na kredyt" + car.model);
+            this.car = car;
+        } else {
+            System.out.println("najpierw nazbieraj potem kupuj");
+        }
+
+    }
+
+
 
     public Double getSalary () {
         System.out.println("Dane o wypłacie były pobrane" + java.time.LocalDateTime.now());

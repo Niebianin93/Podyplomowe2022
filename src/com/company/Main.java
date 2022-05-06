@@ -18,8 +18,8 @@ public class Main {
         cat.name = "Sierściuch";
 
         Human dawid = new Human();
-        dawid.car = new Car("brawo", "fiat");
-        dawid.car.millage = 100000.0;
+        dawid.setCar(new Car("brawo", "fiat"));
+
 
         dawid.firstName = "Dawid";
         dawid.lastName = "Beczek";
@@ -30,12 +30,13 @@ public class Main {
         dawid.mobile.producer = "apple";
         dawid.pet.feed();
 
-        dawid.car = new Car("passat", "vw");
-        dawid.car.millage = 200000.0;
-        System.out.println(dawid.car.millage);
+        dawid.setCar(new Car("passat","vw"));
+        System.out.println(dawid.getCar().millage);
 
         dawid.setSalary(1000.0);
         System.out.println(dawid.getSalary());
+
+
 
 
 
