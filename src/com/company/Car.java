@@ -6,7 +6,7 @@ public class Car {
     String color;
     Double millage;
     Double engineVolume;
-    private Car car;
+    Car car;
     Double value;
 
     public Car(String model, String producer) {

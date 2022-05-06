@@ -34,9 +34,9 @@ public class Main {
         dawid.car.millage = 200000.0;
         System.out.println(dawid.car.millage);
 
-        System.out.println(cat.DEFAULT_WEIGHT);
-        dog.DEFAULT_WEIGHT = 4.0;
-        System.out.println(cat.DEFAULT_WEIGHT);
+        dawid.setSalary(1000.0);
+        System.out.println(dawid.getSalary());
+
 
 
 
