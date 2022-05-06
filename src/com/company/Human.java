@@ -8,7 +8,7 @@ public class Human {
 
     Phone mobile;
     Animal pet;
-
+    Car car;
 
     private Double salary;
 

@@ -3,16 +3,21 @@ package com.company;
 import java.sql.SQLOutput;
 
 public class Animal {
-    String species;
-    Double weight;
+   final String species;
+    private Double weight;
     Integer age;
     String name;
     Boolean isAlive;
 
-    public Animal(String species){
+    static public Double DEFAULT_WEIGHT = 5.0;
+
+    public Animal(String species) {
         this.isAlive = true;
         this.age = 1;
         this.species = species;
+
+
+
 
         switch (this.species){
             case "felis":this.weight = 2.0; break;
